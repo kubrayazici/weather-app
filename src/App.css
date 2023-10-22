@@ -1,0 +1,80 @@
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+	border-radius: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+	background-color: rgb(126, 125, 125);
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr min(1216px, 94%) 1fr;
+}
+
+.container > * {
+  grid-column: 2;
+}
+.weather-container{
+  height: auto;
+  width: 100%;
+  padding: 20px;
+}
+.weather-type{
+  margin-right: 5px;
+
+}
+.weather-type:hover{
+  text-decoration: underline;
+}
+
+.weather-item-container{
+  display: flex;
+  overflow-x: scroll
+}
+.weather-temp{
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 25px;
+
+}
+.weather-temp:hover{
+    z-index: 9;
+    transform: scale(1.25);
+    font-weight: 600;
+  
+}
+.location-name{
+  font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+.weather-title-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
